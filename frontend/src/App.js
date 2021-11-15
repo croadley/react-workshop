@@ -31,8 +31,8 @@ function createTodo(todoObject) {
   return instance.post('/', todoObject);
 }
 
-
-function Todo({ todo, toggleTodo, removeTodo }) {
+// Component for each item on the to-do list
+const Todo = ({ todo, toggleTodo, removeTodo }) => {
   return (
    <FlexGrid>
      <FlexGrid.Row>
@@ -53,6 +53,7 @@ function Todo({ todo, toggleTodo, removeTodo }) {
   )
 }
 
+// Component to input a new item to the to-do list
 const TodoForm = ({ addTodo }) => {
   const [value, setValue] = useState("");
 
@@ -74,6 +75,7 @@ const TodoForm = ({ addTodo }) => {
   );
 }
 
+// Header component
 const Header = () => {
   return (
     <FlexGrid>
@@ -90,6 +92,7 @@ const Header = () => {
 }
 
 const App = () => {
+  // useState is a hook to create state variables that are preserved between function calls
   const [todos, setTodos] = useState([]);
 
   const addTodo = async (text) => {
