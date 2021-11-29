@@ -1,7 +1,7 @@
-# react-workshop
+# HackWestern TELUS GTLP React and Node.js Workshop
 
 To run the project:
-1. git clone 
+1. git clone https://github.com/croadley/react-workshop.git
 2. Open two separate teminals
 3. In the first terminal:
      cd CLONED_FOLDER_LOCATION
